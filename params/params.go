@@ -81,7 +81,7 @@ func getVal(values url.Values, tag string) (string) {
     uv := values.Get(name)
     optsLen := len(opts)
     if optsLen > 0 {
-        if optsLen == 1 && uv == "" {
+        if optsLen == 1 && uv == "default" {
             uv = opts[0]
         }
     }
